@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="maindiv">
+    <div id= "title" >  My Calculator</div>
+      <table border="2"><tr>
+            <td colspan="3"><input type="text" id="result"/></td>
+            <td><input id="happy" type="button" value="CE" onclick="clr('CE')"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" class="btn" value="1" onclick="number('1')"/> </td>
+            <td><input type="button"class="btn" value="2" onclick="number('2')"/> </td>
+            <td><input type="button"class="btn" value="3" onclick="number('3')"/> </td>
+            <td><input type="button"class="btn" value="/" onclick="number('/')"/> </td>
+         </tr>
+         <tr>
+         <td><input type="button" class="btn" value="4" onclick="number('4')"/> </td>
+         <td><input type="button" class="btn" value="5" onclick="number('5')"/> </td>
+         <td><input type="button" class="btn" value="6" onclick="number('6')"/> </td>
+         <td><input type="button" class="btn" value="-" onclick="number('-')"/> </td>
+         </tr>
+      <tr>
+            <td><input type="button" class="btn" value="7" onclick="number('7')"/> </td>
+            <td><input type="button" class="btn" value="8" onclick="number('8')"/> </td>
+            <td><input type="button" class="btn" value="9" onclick="number('9')"/> </td>
+            <td><input type="button" class="btn"value="+" onclick="number('+')"/> </td>
+    </tr>
+         <tr>
+            <td><input type="button" class="btn" value="." onclick="number('.')"/> </td>
+            <td><input type="button" class="btn" value="0" onclick="number('0')"/> </td>
+            <td><input type="button" class="btn" value="=" onclick="execute()"/> </td>
+            <td><input type="button" class="btn" value="*" onclick="number('*')"/> </td>
+         </tr></table>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
