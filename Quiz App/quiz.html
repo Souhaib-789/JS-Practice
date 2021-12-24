@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="quiz.css" />
+  </head>
+  
+  <body>
+
+
+    
+    <div class="wrapper">
+      
+      <div class="quiz">
+        <div class="quiz_header">
+       
+          <div class="quiz_user">
+            <h3>Q U I Z : <span class="name" id="namm" ></span></h3>
+          </div>
+          <div class="quiz_timer">
+            <span class="time">Time: 00:00</span>
+          </div>
+        </div>
+        
+        <div class="quiz_body">
+
+          <div id="questions">
+          
+
+          </div>
+
+          <button class="btn-next" onclick="next()"> <b> NEXT</b></button>
+        </div>
+      </div>
+    </div>
+
+   
+
+  </body>
+  <script src="quiz.js"></script>
+</html>
