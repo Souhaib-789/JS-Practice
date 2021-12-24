@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script> 
+ alert("Welcome to Marksheet Calculator");
+ var name = prompt("Enter Your Name");
+ 
+var sub1 = prompt("Enter 1st subject name.");
+var sub2= prompt("Enter 2nd subject name.");
+var sub3 = prompt("Enter 3rd subject name.");
+var sub4 = prompt("Enter 4th subject name.");
+var sub5 = prompt("Enter 5th subject name."); 
+
+var a= +prompt("Enter Your " +sub1+ " Marks out of 100:","Enter Here!");
+var b= +prompt("Enter Your " +sub2+ " Marks out of 100:", "Enter Here!");
+var c= +prompt("Enter Your " +sub3+ " Marks out of 100:", "Enter Here!");
+var d= +prompt("Enter Your " +sub4+ " Marks out of 100:", "Enter Here!");
+var e= +prompt("Enter Your " +sub5+ " Marks out of 100:", "Enter Here!");
+
+alert("Let's have a look to your marksheet")
+document.write("Dear," + name + "<br>","<br>");
+document.write("Your English Marks out of 100 is:" +a, "<br>",  "<br>")
+document.write("Your Urdu Marks out of 100 is:" +b, "<br>",  "<br>")
+document.write("Your Maths Marks out of 100 is:" +c, "<br>",  "<br>")
+document.write("Your Science Marks out of 100 is:" +d, "<br>",  "<br>")
+document.write("Your SST Marks out of 100 is:" +e, "<br>",  "<br>")
+
+var max=500;
+var sum=a+b+c+d+e;
+document.write("Sum of all Marks out of 500 is : ", + sum,  "<br>", "<br>" ); 
+var percentage=(sum/max)*100;
+document.write("Your Percentage is : " + percentage); 
+
+
+
+if(percentage >70 && percentage<=100)
+{
+    document.write("<br>","<br>", "You got 'A+' grade")
+}
+else if(percentage>60 && percenage<=70)
+{
+    document.write("<br>","<br>", "You got 'A' grade")
+}
+else if(percentage>50 && percentage<=60)
+{
+    document.write("<br>","<br>", "You got 'B' grade")
+}
+else if(percentage>35 && percentage<=50)
+{
+    document.write("<br>","<br>", "You got 'C' grade")
+}
+else{
+    document.write("<br>","<br>", "You are failed!")
+}
+</script>
+</head>
+<body>
+    
+</body>
+</html>
